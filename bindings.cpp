@@ -1021,10 +1021,11 @@ bool DeRestPluginPrivate::sendConfigureReportingRequest(BindingTask &bt)
 
             ConfigureReportingRequest rq3;
             rq3.dataType = deCONZ::Zcl16BitInt;
-            rq3.attributeId = 0x0012;        // Occupied Heating Setpoint - unused
-            rq3.minInterval = 65535;         // disable
-            rq3.maxInterval = 65535;         // disable
-            rq3.reportableChange16bit = 0;   // disable
+            rq3.attributeId = 0x0012;         // Occupied Heating Setpoint
+            rq3.minInterval = 1;              // recommended value
+            rq3.maxInterval = 600;            // recommended value
+            rq3.reportableChange16bit = 50;   // recommended value
+            rq5.manufacturerCode = VENDOR_JENNIC;
 
             ConfigureReportingRequest rq4;
             rq4.dataType = deCONZ::Zcl16BitInt;
