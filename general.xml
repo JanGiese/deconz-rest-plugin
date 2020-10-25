@@ -1731,7 +1731,7 @@ Note: It does not clear or delete previous weekly schedule programming configura
           <attribute id="0x0031" name="Setpoint Change Amount" type="s16" access="r" required="o" default="0x8000"/>
           <attribute id="0x0032" name="Setpoint Change Timestamp" type="utc" access="r" required="o" default="0"/>
         </attribute-set>
-        
+
         <attribute-set id="0x0080" description="eCozy" mfcode="0x1014">
           <attribute id="0x0080" name="Unknown" type="s16" access="r" required="o"/>
           <attribute id="0x0081" name="Unknown" type="s16" access="r" required="o"/>
@@ -1756,7 +1756,8 @@ Note: It does not clear or delete previous weekly schedule programming configura
 				<value name="Reserved" value="6"></value>
 				<value name="Reserved" value="7"></value>
 			</attribute>
-			<attribute id="0x4003" name="Current Temperature Setpoint" type="s16" default="0x07d0" access="rw" required="m" mfcode="0x1037"></attribute>
+			<!-- <attribute id="0x4003" name="Current Temperature Setpoint" type="s16" default="0x07d0" access="rw" required="m" mfcode="0x1037"></attribute> -->
+			<!-- <attribute id="0x0012" name="Occupied Heating Setpoint" type="s16" default="0x07d0" access="rw" required="m" mfcode="0x1037"></attribute> -->
 			<attribute id="0x4008" name="Host Flags" type="u24" default="0x000000" showas="hex" access="rw" required="m" mfcode="0x1037"></attribute>
 		</attribute-set>
 

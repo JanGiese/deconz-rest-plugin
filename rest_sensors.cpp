@@ -1082,7 +1082,7 @@ int DeRestPluginPrivate::changeSensorConfig(const ApiRequest &req, ApiResponse &
                         hostFlags &= ~0x04; // clear `boost` flag
                         hostFlags |=  0x10; // set `disable off` flag
 
-                        if (addTaskThermostatReadWriteAttribute(task, deCONZ::ZclWriteAttributesId, VENDOR_JENNIC, 0x4003, deCONZ::Zcl16BitInt, heatsetpoint))
+                        if (addTaskThermostatReadWriteAttribute(task, deCONZ::ZclWriteAttributesId, VENDOR_JENNIC, 0x0012, deCONZ::Zcl16BitInt, heatsetpoint))
                         {
                             updated = true;
                         }
