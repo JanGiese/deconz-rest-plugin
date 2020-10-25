@@ -1025,7 +1025,7 @@ bool DeRestPluginPrivate::sendConfigureReportingRequest(BindingTask &bt)
             rq3.minInterval = 1;              // recommended value
             rq3.maxInterval = 600;            // recommended value
             rq3.reportableChange16bit = 50;   // recommended value
-            rq5.manufacturerCode = VENDOR_JENNIC;
+            rq3.manufacturerCode = VENDOR_JENNIC;
 
             ConfigureReportingRequest rq4;
             rq4.dataType = deCONZ::Zcl16BitInt;
